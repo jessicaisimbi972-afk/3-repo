@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Omelette Recipe</div>
+        <ul class="nav-links">
+            <li><a href="#recipe">Recipe</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#table">Details</a></li>
+            <li><a href="#volunteer">Volunteer</a></li>
+        </ul>
+        <button class="menu-btn">&#9776;</button>
+    </header>
+
+    <section class="volunteer" id="volunteer">
+        <div class="container">
+            <h2>Volunteer</h2>
+            <form id="volunteerForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <select required>
+                    <option value="" disabled selected>Select Interest</option>
+                    <option value="cooking">Cooking</option>
+                    <option value="photography">Photography</option>
+                    <option value="writing">Writing</option>
+                </select>
+                <textarea rows="5" placeholder="Tell us more..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Omelette Recipe. All rights reserved.</p>
+    </footer>
+
+    <button id="topBtn">&#8593;</button>
+
+    <script src="../new.js"></script>
+</body>
+</html>

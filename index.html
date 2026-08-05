@@ -3,17 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Omelette Recipe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5e6d3;
+            margin: 0;
+            padding: 70px;
+        }
+
+        .recipe {
+            width: 400px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border: 2px dashed brown;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: brown;
+            text-align: center;
+        }
+
+        h2 {
+            color: saddlebrown;
+        }
+
+        ul {
+            color: #5c4033;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .photos {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .photos img {
+            margin: 0 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px 16px;
+            border: 1px solid black;
+        }
+
+        form {
+            width: 60%;
+            margin: auto;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        form button {
+            width: 100%;
+            padding: 10px;
+            background: brown;
+            color: white;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Ingredients</h1>
-<ul>
-    <li>Eggs</li>
-    <li>Butter</li>
-    <li>Salt</li>
-    <li>Spices (To taste)</li>
-    <li> Optional fillings (e.g., cheese, vegetables, meat)</li>
-</ul>
+
+    <div class="photos">
+        <h2>Photos</h2>
+        <img src="omlette1.png" width="350" height="300">
+        <img src="omlette3.png" width="350" height="300">
+        <img src="omlette2.png" width="350" height="300">
+    </div>
+
+    <div class="recipe">
+
+        <h1>Omelette Recipe</h1>
+
+        <h2>Ingredients</h2>
+
+        <ul>
+            <li>2 Eggs</li>
+            <li>1 tablespoon Butter</li>
+            <li>Salt</li>
+            <li>Spices (to taste)</li>
+            <li>Cheese or vegetables (optional)</li>
+        </ul>
+
+    </div>
+
+    <h2>Ingredients Table</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>What is contained</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Onions</td>
+                <td>1 onion</td>
+            </tr>
+            <tr>
+                <td>Spices</td>
+                <td>Black pepper, paprika, cumin</td>
+            </tr>
+            <tr>
+                <td>Eggs</td>
+                <td>5 eggs</td>
+            </tr>
+            <tr>
+                <td>Cooking oil</td>
+                <td>2 spoons</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Volunteer</h2>
+    <form>
+        <input type="text" placeholder="Your Name" >
+        <input type="email" placeholder="Your Email" >
+        <select required>
+            <option value="" disabled selected>Select Interest</option>
+            <option value="cooking">Cooking</option>
+            <option value="photography">Photography</option>
+            <option value="writing">Writing</option>
+        </select>
+        <textarea rows="5" placeholder="Tell us more..."></textarea>
+        <button type="submit">Submit</button>
+    </form>
 
 </body>
 </html>
